@@ -1,0 +1,11 @@
+<view class="cashback-poster">
+    <view class="cashback-poster">
+        <view class="mask" bindtap="eventClose"></view>
+        <canvas class="canvas-poster" id="canvasPoster" style="width:{{canvasW}}px;height:{{canvasH}}px;" canvas-id="canvasPoster"></canvas>
+        <view wx:if="{{imgLoaded}} "class="content">
+            <image class="img" src="{{poster}}" ref="img" bindlongpress="eventLongPress" data-url="{{poster}}" mode="widthFix"/>
+            <span class="arrow">↵</span>
+            <text class="text">长按上方海报，保存图片分享给好友</text>
+        </view>
+    </view>
+</view>
